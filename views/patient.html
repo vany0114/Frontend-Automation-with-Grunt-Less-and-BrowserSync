@@ -1,0 +1,90 @@
+<div class="container">
+    <!-- Profile Picture -->
+    <div class="col-xs-6 col-sm-6 none-padding-left">
+        <div class="panel panel-default box">
+          <div class="panel-body">
+            <div class="col-xs-3 col-sm-3 vcenter text-center">
+                <figure class="patient-picture">
+                    <img src="../images/profile-fallback.png" alt="logo">
+                    <br/>
+                    <div class="">
+	                    <strong>DOB:{{ patientInformation.birthDate }}</strong>
+	                </div>
+	                <div class="">
+	                   <strong>{{ patientInformation.age }} YRS</strong>
+	                </div>
+                </figure>
+            </div>
+
+			<!-- Personal Information -->
+            <div class="col-xs-4 col-sm-4">
+                <div class="">
+                    <h5><strong>{{ patientInformation.name }}</strong></h5>
+                </div>
+                <div class="">
+                   <span>{{ patientInformation.addressLine1 }}</span>
+                </div>
+                <div class="">
+                   <span>{{ patientInformation.addressLine2 }}</span>
+                </div>
+                <div class="">
+                   <span>PH: {{ patientInformation.phoneNumber }}</span>
+                </div>
+                <br/>
+                <div class="">
+                   <span>Enrollment Status:</span>
+                </div>
+                <div class="">
+                   	<span><strong>{{ patientInformation.status }}</strong></span>
+                </div>
+            </div>  
+
+            <!-- Buttons -->
+            <div class="col-xs-5 col-sm-5 buttons">            	
+        		<button type="button" class="btn btn-primary btn-default btn-round">View Patient Time Line</button>        	
+        		<button type="button" class="btn btn-primary btn-default btn-round">View Patient Risk</button>        	
+        		<button type="button" class="btn btn-primary btn-default btn-round">Opportunities for Patient</button>            	
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- Current Risk Stratification -->
+    <div class="col-xs-4 col-sm-3">
+        <div class="panel panel-default box">
+            <div class="panel-heading text-center">
+                <span><strong>Current Risk Stratification</strong></span>
+                <i data-icon class="icon-cog"></i>
+            </div>
+            <div class="panel-body">
+                <div clas="row">
+                	<div class="col-xs-12 col-sm-12 text-center current-risk">
+                		<span>Current</span>
+                		<button type="button" class="btn btn-primary btn-circle btn-xl mustard">{{ riskStratification.current }}</button>
+                	</div>
+                </div>
+                <div class="row text-center">
+                	<div class="col-xs-4 col-sm-4 projected-risk">
+                		<div class="risk-selected">
+	            			Projected
+	            			<button type="button" class="btn btn-primary btn-circle btn-dashed">{{ riskStratification.projected }}</button>
+            			</div>
+                	</div>
+                	<div class="col-xs-4 col-sm-4 projected-risk">
+                		<div class="risk-unselected">
+	                		&nbsp;&nbsp;2015&nbsp;&nbsp;&nbsp;
+	            			<button type="button" class="btn btn-primary btn-circle btn-solid yellow">{{ riskStratification.y2015 }}</button>
+            			</div>
+                	</div>		
+                	<div class="col-xs-4 col-sm-4 projected-risk">
+                		<div class="risk-unselected">
+	                		&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;
+	            			<button type="button" class="btn btn-primary btn-circle btn-solid red">{{ riskStratification.y2014 }}</button>
+	            		</div>
+                	</div>		
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

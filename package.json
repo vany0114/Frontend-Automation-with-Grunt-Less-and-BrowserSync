@@ -1,0 +1,38 @@
+{
+  "name": "FrontedLab",
+  "version": "1.0.0",
+  "description": "frontend lab",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vany0114/Frontend_Lab.git"
+  },
+  "keywords": [
+    "angularjs",
+    "frontend",
+    "grunt",
+    "browser-sync",
+    "less",
+    "highcharts"
+  ],
+  "author": "Geovanny Alzate Sandoval",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "dependencies": {
+    "highcharts": "^4.2.3",
+    "http-proxy": "^1.13.2",
+    "jit-grunt": "^0.10.0"
+  }
+}

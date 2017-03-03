@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html ng-app="talosTest">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>FrontendLab | Giovany Alzate Sandoval</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/jasny-bootstrap/css/jasny-bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/jasny-bootstrap/css/navmenu-push.css">
+  <!-- site -->
+  <link rel="stylesheet" href="../dist/css/site.min.css">
+  <!-- Talos Font -->
+  <link rel="stylesheet" href="../css/talos-font.css">  
+  <!-- font-awesome icons -->
+  <!-- <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <nav id="navMenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas orangeMenu" role="navigation">
+    <a class="navmenu-close color-white pointer"><i data-icon class="icon-cross-out"></i></a>
+    <ul class="nav navmenu-nav">
+        <li>
+          <a href="#/businessLeader">
+            <i data-icon class="icon-graph-horizontal"></i>
+            Business Leader</a>
+        </li>
+        <li>
+          <a href="#/patient">
+            <i data-icon class="icon-user"></i>
+            Patient View</a>
+        </li>
+    </ul>
+  </nav>
+
+  <header class="main-header">
+    <div class="navbar-main navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="row vcenter">
+          <div class="col-xs-6 col-sm-6">
+            <h3 class="title">
+              Frontend Lab
+            </h3>
+          </div>
+
+          <div class="col-xs-6 col-sm-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <button type="button" class="navbar-toggle none-border" data-toggle="offcanvas" data-target="#navMenu">
+                    <span class="icon-bar background-white"></span>
+                    <span class="icon-bar background-white"></span>
+                    <span class="icon-bar background-white"></span>
+                </button>
+
+                <a class="profile-picture">
+                  <figure class="pointer">
+                    <img src="../images/profile-fallback.png" alt="profile-photo">
+                    <span>Dr. Smith</span>
+                    <i class="fa fa-caret-down"></i>
+                  </figure>                  
+                </a>
+              </div>
+            </div>             
+          </div>         
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div data-ng-view=""></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row vcenter">
+        <div class="col-xs-12 col-sm-12">
+          <span><strong>© 2016 vany0114</strong></span>
+          <span><strong>|</strong></span>
+          <span><strong>SITE MAP</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery 2.2.0 -->
+  <script src="../scripts/plugins/jquery-2.2.3.min.js"></script>  
+  <!-- Bootstrap 3.3.6 -->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../bootstrap/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+  <!-- Angular js -->
+  <script src="../scripts/plugins/angular-1.5.3.min.js"></script>
+  <script src="../scripts/plugins/angular-route-1.5.3.min.js"></script>
+  <!-- app -->
+  <script src="../dist/js/app.min.js"></script>
+  <!-- highcharts -->
+  <script src="../node_modules/highcharts/highcharts.js"></script>
+
+  <script>
+      $(function(){
+        $(".navmenu-close").click(function(){
+          $(".navmenu").offcanvas('hide');
+        });
+      })
+  </script>
+
+<!-- refresh changes on server -->
+<!-- <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.2.12.1.js'><\/script>".replace("HOST", location.hostname));
+//]]>
+</script> -->
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+</body>
+</html>

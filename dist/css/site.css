@@ -1,0 +1,236 @@
+body {
+  background-color: #DBE3E8;
+}
+.main-header {
+  position: relative;
+  max-height: 70px;
+}
+.main-header .logo-talos {
+  display: block;
+  float: left;
+}
+.main-header .logo-talos img {
+  width: 40%;
+}
+.main-header .profile-picture {
+  display: block;
+  float: right;
+  margin-right: -15%;
+}
+.main-header .profile-picture img {
+  width: 20%;
+  border-radius: 50%;
+}
+.main-header .profile-picture span {
+  padding-left: 10px;
+  color: white;
+}
+.main-header .profile-picture i {
+  color: white;
+  padding-left: 2px;
+  vertical-align: middle;
+}
+.orangeMenu {
+  background-color: #D23C00;
+  padding-top: 1.5%;
+}
+.orangeMenu ul {
+  padding-top: 3%;
+}
+.navmenu-default .navmenu-nav > li > a,
+.navbar-default .navbar-offcanvas .navmenu-nav > li > a {
+  color: white;
+  padding-left: 8%;
+}
+.navmenu-nav > li > a > i {
+  padding-right: 2%;
+}
+.navmenu-nav > li {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 0.1px;
+  margin-bottom: -1px;
+}
+.navmenu-close > i {
+  padding-left: 8%;
+}
+.navbar-main {
+  background-color: #D23C00;
+  position: relative;
+  min-height: 70px;
+}
+.main-footer {
+  background-color: #D23C00;
+  min-height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+.main-footer span {
+  color: white;
+  padding: 4px;
+}
+.vcenter {
+  margin-top: 15px;
+}
+.pointer {
+  cursor: pointer;
+}
+.background-white {
+  background-color: white !important;
+}
+.color-white {
+  color: white !important;
+}
+.logo {
+  width: 60%;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.patient-picture img {
+  border-radius: 50%;
+  border-color: #a0a0ff;
+  border-width: 1px;
+  border-style: solid;
+  width: 80%;
+}
+.patient-picture strong {
+  font-size: 12px;
+}
+.box-padding-top {
+  padding-top: 7%;
+}
+.box-padding-right {
+  padding-right: 7%;
+}
+.box-padding-bottom {
+  padding-bottom: 7%;
+}
+.box-padding-left {
+  padding-left: 2%;
+}
+.box {
+  border-radius: 0px !important;
+}
+.box span {
+  color: #A6A6A6;
+}
+.box .panel-heading i {
+  float: right;
+  color: #767B80;
+}
+.none-border {
+  border-color: transparent !important;
+  margin-top: 0.5%;
+}
+.btn-default {
+  background-color: #D23C00;
+  border-color: #D23C00;
+  min-width: 180px;
+  font-size: 12px;
+}
+.btn-round {
+  border-radius: 25px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #D23C00 !important;
+  border-color: #D23C00 !important;
+}
+.buttons {
+  padding-top: 10px;
+}
+.buttons button {
+  margin-bottom: 20px;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 21px;
+  line-height: 0.428571;
+  border-radius: 20px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+.btn-dashed {
+  background-color: #DBE3E8;
+  border-style: dashed;
+  border-bottom-width: 2.5px;
+  border-color: #EE992C;
+  color: #EE992C;
+}
+.mustard {
+  background-color: #EE992C;
+  border-color: #EE992C;
+}
+.btn-solid {
+  background-color: white;
+  border-style: solid;
+  border-bottom-width: 2.5px;
+}
+.yellow {
+  background-color: white;
+  border-color: #E9CC45;
+  color: #E9CC45;
+}
+.red {
+  background-color: white;
+  border-color: #E03B24;
+  color: #E03B24;
+}
+.current-risk span {
+  float: left;
+  margin: -15px;
+  font-size: 12px;
+}
+.projected-risk {
+  color: #A6A6A6;
+  font-size: 12px;
+  padding-top: 1px;
+}
+.projected-risk .risk-selected {
+  background-color: #DBE3E8;
+  padding: 7px;
+  position: absolute;
+}
+.projected-risk .risk-unselected {
+  padding: 7px;
+}
+.title {
+  color: white;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.none-padding-left  {
+  padding-left: 0px;
+}
+.none-padding-top  {
+  padding-top: 0px;
+}
+.none-padding-bottom  {
+  padding-bottom: 0px;
+}
+.none-padding-right  {
+  padding-right: 0px;
+}

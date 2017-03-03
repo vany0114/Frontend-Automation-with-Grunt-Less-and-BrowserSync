@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "talos-icon-font";
+  src:url("../fonts/talos-icons/talos-icon-font.eot");
+  src:url("../fonts/talos-icons/talos-icon-font.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/talos-icons/talos-icon-font.woff") format("woff"),
+  url("../fonts/talos-icons/talos-icon-font.ttf") format("truetype"),
+  url("../fonts/talos-icons/talos-icon-font.svg#talos-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "talos-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "talos-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross-out:before {
+  content: "\78";
+}
+.icon-graph-horizontal:before {
+  content: "\62";
+}
+.icon-graph-bar:before {
+  content: "\63";
+}
+.icon-users:before {
+  content: "\64";
+}
+.icon-users-1:before {
+  content: "\65";
+}
+.icon-users-2:before {
+  content: "\66";
+}
+.icon-user-md:before {
+  content: "\67";
+}
+.icon-first-aid:before {
+  content: "\68";
+}
+.icon-clock:before {
+  content: "\69";
+}
+.icon-user:before {
+  content: "\6a";
+}
+.icon-user-1:before {
+  content: "\6b";
+}
+.icon-user-2:before {
+  content: "\6c";
+}
+.icon-cog:before {
+  content: "\61";
+}
+.icon-calendar:before {
+  content: "\6d";
+}
+.icon-list-alt:before {
+  content: "\6e";
+}
+.icon-bell:before {
+  content: "\6f";
+}

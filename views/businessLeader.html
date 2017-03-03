@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <!-- Hospital Information -->
+        <div class="col-xs-5 col-sm-5 none-padding-left">
+            <div class="panel panel-default box">
+              <div class="panel-body">
+                <div class="col-xs-6 col-sm-6 vcenter">
+                    <figure>
+                        <img src="../images/pphc_logo.png" alt="logo" class="logo">
+                    </figure>
+                </div>
+
+                <div class="col-xs-6 col-sm-6">
+
+                    <div class="">
+                        <h5><strong>{{ hospitalInformation.name }}</strong></h5>
+                    </div>
+                    <div class="">
+                       <span>{{ hospitalInformation.addressLine1 }}</span>
+                    </div>
+                    <div class="">
+                       <span>{{ hospitalInformation.office }}</span>
+                    </div>
+                    <div class="">
+                       <span>{{ hospitalInformation.addressLine2 }}</span>
+                    </div>
+                    <div class="">
+                       <span>PH: {{ hospitalInformation.phoneNumber }}</span>
+                    </div>
+                    <div class="">
+                       <span>FAX: {{ hospitalInformation.fax }}</span>
+                    </div>
+                </div>      
+              </div>
+            </div>
+        </div>
+
+        <!-- Overal Financial Summary -->
+        <div class="col-xs-7 col-sm-7">
+            <div class="panel panel-default box">
+                <div class="panel-heading text-center">
+                    <span><strong>Overal Financial Summary</strong></span>
+                    <i data-icon class="icon-cog"></i>
+                </div>
+                <div class="panel-body">
+                    <hc-bar-chart data="chartData" categories="categories" height="95"></hc-bar-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+         <!-- Physician Groups -->
+        <div class="col-xs-12 col-sm-12 none-padding-left">
+            <div class="panel panel-default box">
+                <div class="panel-heading text-center">
+                    <span><strong>Physician Groups</strong></span>
+                    <i data-icon class="icon-cog"></i>
+                </div>
+                <div class="panel-body">
+                    <hc-bar-chart data="physicianData" categories="physicianCategories" height="200" width="1100"></hc-bar-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
