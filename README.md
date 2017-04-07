@@ -164,3 +164,5 @@ In order to browserSync works, is important to add this script in the main html:
 This script call the browserSync client that you have installed.
 
 So you don't need worry about compile or make a manual change in order to test all your changes when you are developing, as you can see, you can mix a lot of task that Grunt provide you in order to automate you developing process.
+
+Visit my blog <http://elvanydev.com/>
